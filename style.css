@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* cornflowerblue  rgb(68, 101, 164)*/
+body {
+    color: black;
+
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient( rgb(68, 101, 164),cornflowerblue);
+}
+.perfil .box1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.perfil .box1 h3 {
+    font-size: 40px;
+}
+.perfil .box1 .contato {
+    display: flex;
+    gap: 10px;
+}
+.perfil .box1 .contato a img {
+    height: 100%;
+
+}
+.perfil .box1 .contato a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    border-radius: 9px;
+}
+
+.perfil .box2 .area1 h1 {
+    font-size: 180px;
+    line-height: 150px;
+    text-transform: uppercase;
+}
+.perfil .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.perfil .area2 {
+    position: relative;
+    right: 0px;
+    max-width: 450px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    background-image: linear-gradient(cornflowerblue, rgb(68, 101, 164));
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.projetos .projeto1 .box,
+.projetos .projeto2 .box {
+    width: 30vw;
+    min-width: 390px;
+    min-height: calc(390px + 12%);
+    height: calc(31vw + 12%);
+    border: 20px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.projetos .projeto1 .box .camera,
+.projetos .projeto2 .box .camera {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 5px solid black;
+    position: absolute;
+    top: -20px;
+}
+
+.projetos .box iframe {
+    height: 100%;
+}
+
+.projetos .descricao {
+    width: 30vw;
+    min-width: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projetos .descricao a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 8px;
+}
+.projetos .descricao a img {
+    width: 30px;
+}
+
+
+@media (max-width:1100px) {
+    .perfil .box2 .area1 h1 {
+        font-size: 120px;
+        line-height: 100px;
+    }
+    .perfil .box1 h3 {
+        font-size: 30px;
+    }
+    .perfil .box1 .contato a{
+        width: 40px;
+        height: 40px;
+    }
+    .perfil .area2 {
+        max-width: 350px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:795px) {
+    .container.projetos{
+        height: 180vh;
+    }
+}
+
+@media (max-width:760px) {
+    .perfil .box2 .area1 h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    .perfil .box1 h3 {
+        font-size: 25px;
+    }
+    .perfil .box1 .contato a{
+        width: 30px;
+        height: 30px;
+    }
+    .perfil .area2 {
+        max-width: 250px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:500px) {
+    .perfil .box2 .area1 h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .perfil .box1 h3 {
+        font-size: 20px;
+    }
+    .perfil .box1 .contato a{
+        width: 30px;
+        height: 30px;
+    }
+    .perfil .area2 {
+        max-width: 350px;
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
